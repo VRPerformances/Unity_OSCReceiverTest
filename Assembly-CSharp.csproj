@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\OSCReceiver.cs" />
+     <Compile Include="Assets\Scripts\OSCReceiverThreaded.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
@@ -57,7 +58,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Ventuz.OSC">
- <HintPath>/Users/cclark/Documents/Devel/unity/Vodafone/OSCReceiver/Assets/plugins/Ventuz.OSC.dll</HintPath>
+ <HintPath>/Users/cclark/Documents/Devel/unity/Shaman/OSCReceiver/Assets/plugins/Ventuz.OSC.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

@@ -35,19 +35,26 @@ public class OSCReceiver : MonoBehaviour {
 		// Return if there are no more messages available
 		if (message != null) {
 
-			OscBundle bundle = message as OscBundle;
-			if (bundle != null) {
+			if(message.GetType() == typeof(Ventuz.OSC.OscElement)){
+				Debug.Log("is OscElement");
+				receivedMessages.Add((OscElement) message);
+			}
+			else{
 
-				// Enumerate over all elements
-				IEnumerator e = bundle.Elements.GetEnumerator();
-				while (e.MoveNext())
-				{
-					// Check if element matches OSC path of this gameObject
-					OscElement el = e.Current as OscElement;
-					Debug.Log("got OSC message! " + el.Address);
+				OscBundle bundle = message as OscBundle;
+				if (bundle != null) {
 
-					receivedMessages.Add(el);
+					// Enumerate over all elements
+					IEnumerator e = bundle.Elements.GetEnumerator();
+					while (e.MoveNext())
+					{
+						// Check if element matches OSC path of this gameObject
+						OscElement el = e.Current as OscElement;
+						Debug.Log("got OSC message! " + el.Address);
 
+						receivedMessages.Add(el);
+
+					}
 				}
 			}
 		}
