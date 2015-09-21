@@ -1,13 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/OSCReceiverThreaded.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/OSCReceiver.cs">
     <Files>
-      <File FileName="Assets/Scripts/OSCReceiverThreaded.cs" Line="15" Column="7" />
-      <File FileName="Assets/Scripts/OSCReceiver.cs" Line="67" Column="3" />
+      <File FileName="Assets/Scripts/OSCReceiverThreaded.cs" Line="96" Column="9" />
+      <File FileName="Assets/Scripts/OSCReceiver.cs" Line="43" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/cclark/Documents/Devel/unity/Shaman/OSCReceiver/Assets/Scripts/OSCReceiverThreaded.cs" line="83" />
+      <Breakpoint file="/Users/cclark/Documents/Devel/unity/Shaman/OSCReceiver/Assets/Scripts/OSCReceiverThreaded.cs" line="67" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
